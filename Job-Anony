@@ -1,0 +1,782 @@
+
+-----------------------------------------------------
+--[[---------------------------------------------------------------------------
+DarkRP custom jobs
+---------------------------------------------------------------------------
+This file contains your custom jobs.
+This file should also contain jobs from DarkRP that you edited.
+
+Note: If you want to edit a default DarkRP job, first disable it in darkrp_config/disabled_defaults.lua
+      Once you've done that, copy and paste the job to this file and edit it.
+
+The default jobs can be found here:
+https://github.com/FPtje/DarkRP/blob/master/gamemode/config/jobrelated.lua
+
+For examples and explanation please visit this wiki page:
+http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
+
+Add your custom jobs under the following line:
+---------------------------------------------------------------------------]]
+
+TEAM_CITIZEN = DarkRP.createJob("Chomeur", {
+    color = Color(39, 255, 0, 255),
+    model = {
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl"},
+    description = [[]],
+    weapons = {"brh_ci"},
+    command = "Chomeur",
+	category = "Chomeur",
+    max = 0,
+	salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false
+})
+
+TEAM_ARABE = DarkRP.createJob("Voleur", {
+    color = Color(39, 255, 0, 255),
+    model = {
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl",
+		"models/player/Suits/male_03_open_tie.mdl"},
+    description = [[]],
+    weapons = {"pickpocket", "keypad_cracker", "weapon_arc_atmhack", "lockpick","brh_ci"},
+    command = "Voleur",
+	category = "Illégal",
+    max = 2,
+    salary = 65,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false
+})
+
+TEAM_BANQUIER = DarkRP.createJob("Banquier", {
+    color = Color(220, 255, 0, 255),
+    model = {"models/player/Suits/male_05_shirt_tie.mdl"},
+    description = [[Vous etes Banquier, vous gerez la banque]],
+    weapons = {"brh_ci"},
+    command = "banquier",
+    max = 2,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+
+})
+
+TEAM_SDF = DarkRP.createJob("Sdf", {
+    color = Color(35, 35, 9, 255),
+    model = {"models/player/corpse1.mdl"},
+    description = [[Vous etes Sdf, Vous réclamer de l'argent]],
+    weapons = {"weapon_bugbait"},
+    command = "sdf",
+    max = 5,
+    salary = 5,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false
+})
+
+TEAM_GUN = DarkRP.createJob("Vendeur d'Arme", {
+    color = Color(255, 150, 0, 255),
+    model = {"models/player/monk.mdl"},
+    description = [[Vous etes Armurier,Vous vender des armes au gens]],
+    weapons = {"brh_ci"},
+    command = "armurier",
+    max = 2,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false
+})
+
+
+TEAM_NOIR = DarkRP.createJob("Marchand noir", {
+    color = Color(255, 150, 0, 255),
+    model = {"models/player/Suits/male_03_open_tie.mdl"},
+    description = [[Vous etes marchand noir,Vous vendez des chose illégal ]],
+    weapons = {"brh_ci"},
+    command = "marchandnoir",
+	category = "Illégal",
+    max = 2,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+
+})
+
+TEAM_TUEURGAGE = DarkRP.createJob("Tueur A Gage", {
+    color = Color(39, 255, 0, 255),
+    model = {"models/player/Group03m/male_06.mdl"},
+    description = [[Voue etes Tueur a gage, vous tuer sous contrat]],
+    weapons = {"m9k_aw50","brh_ci","m9k_knife"},
+    command = "tueurgage",
+	category = "Illégal",
+    max = 2,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false
+})
+
+TEAM_AGENTDESECURITE = DarkRP.createJob("Sécurité", {
+    color = Color(10, 247, 215, 255),
+    model = {
+        "models/avarox/PPD_2_07.mdl",
+		"models/avarox/PPD_2_01.mdl",
+		"models/avarox/PPD_2_02.mdl",
+		"models/avarox/PPD_2_03.mdl",
+		"models/avarox/PPD_2_04.mdl",
+		"models/avarox/PPD_2_05.mdl",
+		"models/avarox/PPD_2_06.mdl",
+    },
+    description = [[Vous etes agent de sécurité. Vous protégé les commerçants]],
+    weapons = {"brh_ci"},
+    command = "agentdesecurite",
+	category = "Commercant",
+    max = 4,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    candemote = false
+})
+
+TEAM_AMB = DarkRP.createJob("Ambulancier", {
+    color = Color(239, 5, 92, 255),
+    model = {
+        "models/player/portal_and_mika/medicegta_07.mdl",
+        "models/player/portal_and_mika/medicegta_04.mdl"
+    },
+    description = [[Vous etes ici pour sauver les personne mort]],
+    weapons = {"stungun","brh_ci","fas2_ifak","weapon_defibrilator"},
+    command = "ambus",
+    max = 3,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_GARDEMAIRE = DarkRP.createJob("Garde du Maire", {
+    color = Color(7, 179, 244, 255),
+    model = {
+        "models/player/Suits/male_02_shirt.mdl",
+        "models/player/Suits/male_03_shirt.mdl",
+        "models/player/Suits/male_04_shirt.mdl",
+        "models/player/Suits/male_05_shirt.mdl"
+    },
+    description = [[Vous etes Garde du corp.Vous protégé le Maire]],
+    weapons = {"keys","stunstick","idcard","weapon_physcannon","gmod_camera","gmod_tool","weapon_physgun","weapon_fists","weapon_arc_atmcard","brh_ci"},
+    command = "gardemaire",
+    max = 4,
+    salary = 50,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
+    candemote = true
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_GARAGE = DarkRP.createJob("Garagiste", {
+    color = Color(83, 95, 99, 255),
+    model = {"models/player/mechanic.mdl"},
+    description = [[Vous etes garagiste. Vous reparé les véhicule]],
+    weapons = {"keys","idcard","vc_wrench","weapon_physcannon","gmod_camera","gmod_tool","weapon_physgun","weapon_fists","weapon_arc_atmcard","brh_ci"},
+    command = "garage",
+    max = 2,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","user","Helpeur","Modérateur-Test","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier FULL",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Un Garagiste est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_TAXI = DarkRP.createJob("Chauffeur de Taxi", {
+    color = Color(243, 244, 5, 255),
+    model = {"models/fearless/dbsuit09.mdl"},
+    description = [[Vous etes Chauffeur de Taxi. Vous faites des course pour amener les gens a destination.]],
+    weapons = {"keys","idcard","weapon_physcannon","gmod_camera","gmod_tool","weapon_physgun","weapon_fists","weapon_arc_atmcard","brh_ci"},
+    command = "taxi",
+    max = 2,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+	PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+    customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","user","Helpeur","Modérateur-Test","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier FULL",
+	PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Un Chauffeur de taxi est mort.")
+    end
+})
+
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_POLICE = DarkRP.createJob("Policier", {
+    color = Color(0, 29, 255, 255),
+    model = {
+        "models/player/portal/f_police2_armor.mdl",
+        "models/player/portal/f_police3_armor.mdl",
+        "models/player/portal/f_police4_armor.mdl",
+        "models/player/portal/f_police5_armor.mdl",
+        "models/player/portal/f_police6_armor.mdl",
+        "models/player/portal/f_police7_armor.mdl",
+		"models/player/portal/f_police_armor.mdl"
+    },
+    description = [[Vous ete Policier de la ville, vous faire regnez la loi]],
+    weapons = {"arrest_stick","weapon_arc_atmcard","idcard", "stungun", "unarrest_stick", "weapon_doorbreak", "keys", "weaponchecker", "stunstick", "weapon_physcannon", "m9k_usp", "gmod_camera", "weapon_physgun", "gmod_tool", "weapon_fists", "policebadge", "weapon_r_handcuffs","brh_ci","brh_cops_ci","vc_spikestrip_wep","pass_police_nationale"},
+    command = "police",
+    max = 15,
+    salary = 50,
+    admin = 0,
+    vote = false,
+    hasLicense = true,
+    candemote = true,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(100) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","user","Helpeur","Modérateur-Test","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier FULL",
+		PlayerDeath = function(ply, weapon, killer)
+		ply:changeTeam(GAMEMODE.DefaultTeam, true)
+		if killer:IsPlayer() then
+			DarkRP.notifyAll(0, 4, "Un Policier est mort.")
+		else
+			DarkRP.notifyAll(0, 4, "Un Policier est mort.")
+		end
+	end	
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_COMMISSAIRE = DarkRP.createJob("-wishlist- Commissaire", {
+    color = Color(0, 86, 255, 255),
+    model = {"models/portal2/patrol_09.mdl"},
+    description = [[Vous etes Commissaire de police, vous gérez les forces de police]],
+    weapons = {"arrest_stick","weapon_arc_atmcard","idcard", "stungun", "unarrest_stick", "weapon_doorbreak", "keys", "weaponchecker", "stunstick", "weapon_physcannon", "gmod_camera", "weapon_physgun", "gmod_tool", "weapon_fists","m9k_model500","m9k_smgp90","policebadgewallet", "weapon_r_handcuffs","brh_ci","brh_cops_ci","vc_spikestrip_wep","pass_police_nationale"},
+    command = "commissaire",
+    max = 1,
+    salary = 100,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(250) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"Wishlistc","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier Wishlist",
+		PlayerDeath = function(ply, weapon, killer)
+		ply:changeTeam(GAMEMODE.DefaultTeam, true)
+		if killer:IsPlayer() then
+			DarkRP.notifyAll(0, 4, "Le Commissaire est mort.")
+		else
+			DarkRP.notifyAll(0, 4, "Le Commissaire est mort.")
+		end
+	end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_AGENTSECRET = DarkRP.createJob("-VIP- Agent Secret", {
+    color = Color(39, 255, 0, 255),
+    model = {"models/fearless/mafia02.mdl"},
+    description = [[Vous etes agent secret, vous demantelé les gangs]],
+    weapons = {"arrest_stick","weapon_arc_atmcard","idcard", "stungun", "unarrest_stick", "weapon_doorbreak", "keys", "weaponchecker", "stunstick", "weapon_physcannon", "m9k_usp", "gmod_camera", "weapon_physgun", "gmod_tool", "weapon_fists", "policebadge", "weapon_r_handcuffs","brh_ci","brh_cops_ci","vc_spikestrip_wep","pass_police_nationale"},
+    command = "agentsecret",
+    max = 5,
+    salary = 30,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
+    candemote = true,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier VIP",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Un agent secret est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_CHEFRAID = DarkRP.createJob("-wishlist- Chef RAID", {
+    color = Color(0, 12, 255, 255),
+    model = {"models/fearless/sru01.mdl"},
+    description = [[Vous faitez partit du RAID,Vous protéger les gens]],
+    weapons = {"arrest_stick","weapon_arc_atmcard","idcard", "stungun","unarrest_stick","weapon_r_handcuffs", "weapon_doorbreak", "keys", "weaponchecker", "stunstick", "weapon_physcannon", "gmod_camera", "weapon_physgun", "gmod_tool", "weapon_fists","m9k_hk45","m9k_scar","m9k_jackhammer","policebadgewallet","brh_ci","brh_cops_ci","vc_spikestrip_wep","pass_police_nationale"},
+    command = "chefraid",
+    max = 1,
+    salary = 200,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(250) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"Wishlistr","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier wishlist",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Le Chef RAID est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_SNIPER = DarkRP.createJob("-VIP- Sniper RAID", {
+    color = Color(0, 12, 255, 255),
+    model = {
+        "models/fearless/sru02.mdl",
+        "models/msf/soldier2.mdl"
+    },
+    description = [[Vous faitez partit du RAID,Vous protéger les gens]],
+    weapons = {"arrest_stick","weapon_arc_atmcard","idcard","stungun", "unarrest_stick","weapon_r_handcuffs", "weapon_doorbreak", "keys", "weaponchecker", "stunstick", "weapon_physcannon", "realistic_hook", "weapon_physgun", "gmod_tool", "weapon_fists","m9k_hk45","m9k_barret_m82","policebadge","brh_ci","brh_cops_ci","vc_spikestrip_wep","pass_police_nationale"},
+    command = "sniperraid",
+    max = 5,
+    salary = 100,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
+    candemote = true,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(250) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier VIP",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Un Sniper RAID est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_RAID = DarkRP.createJob("Agent du RAID", {
+    color = Color(0, 12, 255, 255),
+    model = {"models/player/r6s_doc.mdl"},
+    description = [[Vous faitez partit du RAID,Vous protéger les gens]],
+    weapons = {"arrest_stick","weapon_arc_atmcard","idcard","stungun", "unarrest_stick","weapon_r_handcuffs", "weapon_doorbreak", "keys", "weaponchecker", "stunstick", "weapon_physcannon", "gmod_camera", "weapon_physgun", "gmod_tool", "weapon_fists","m9k_hk45","m9k_scar","policebadge","brh_ci","brh_cops_ci","vc_spikestrip_wep","pass_police_nationale"},
+    command = "raid",
+    max = 5,
+    salary = 100,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
+    candemote = true,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(250) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"user","VIP","Modérateur-Test","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier FULL",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Un agent RAID est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_MAIRE = DarkRP.createJob("Maire", {
+    color = Color(237, 9, 9, 255),
+    model = {"models/fearless/mayor1.mdl"},
+    description = [[Vous etes le maire, democratie ou dictature a vous de choisir]],
+    weapons = {"keys","weapon_physcannon","idcard","weapon_arc_atmcard","gmod_camera","gmod_tool","weapon_physgun","weapon_fists"},
+    command = "maire",
+    max = 1,
+    salary = 100,
+    admin = 0,
+    vote = true,
+    hasLicense = true,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","Helpeur","Modérateur-Test","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier FULL",
+		PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Le Maire est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_PARRAIN = DarkRP.createJob("-VIP- Parrain", {
+    color = Color(28, 21, 21, 255),
+    model = {"models/fearless/don1.mdl"},
+    description = [[Vous etes de parrain,vous gerer les mafieux]],
+    weapons = {"keys","weapon_arc_atmcard","idcard","weapon_physcannon","gmod_camera","gmod_tool","weapon_physgun","weapon_fists","m9k_remington1858","brh_ci"},
+    command = "parrain",
+    max = 1,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier VIP",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Le Parrain est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_MAFIEUX = DarkRP.createJob("Mafieux", {
+    color = Color(28, 21, 21, 255),
+    model = {
+        "models/fearless/mafia02.mdl",
+        "models/fearless/mafia04.mdl",
+        "models/fearless/mafia06.mdl",
+        "models/fearless/mafia07.mdl",
+        "models/fearless/mafia09.mdl"
+    },
+    description = [[Vous etes mafieux, vous faites partit d'un gang]],
+    weapons = {"keys","weapon_arc_atmcard","idcard","weapon_physcannon","gmod_camera","gmod_tool","weapon_physgun","weapon_fists","brh_ci"},
+    command = "mafieux",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","user","Helpeur","Modérateur-Test","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier FULL",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Un mafieux est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_CHEFBLOODZ = DarkRP.createJob("-VIP- Chef Bloodz", {
+    color = Color(234, 0, 0, 255),
+    model = {
+        "models/player/bloodz/slow_1.mdl",
+        "models/player/bloodz/slow_2.mdl",
+        "models/player/bloodz/slow_3.mdl"
+    },
+    description = [[Vous est chef bloodz, vous gerer les bloodz]],
+    weapons = {"keys","weapon_arc_atmcard","idcard","weapon_physcannon","gmod_camera","gmod_tool","weapon_physgun","weapon_fists","m9k_remington1858","brh_ci"},
+    command = "chefbloodz",
+    max = 1,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier VIP",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Le Chef Bloodz est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_BLOODZ = DarkRP.createJob("Bloodz", {
+    color = Color(234, 0, 0, 255),
+    model = {
+        "models/player/bloodz/slow_1.mdl",
+        "models/player/bloodz/slow_2.mdl",
+        "models/player/bloodz/slow_3.mdl"
+    },
+    description = [[Vous etes Bloodz, vous faites partit d'un gang]],
+    weapons = {"keys","weapon_arc_atmcard","idcard","weapon_physcannon","gmod_camera","gmod_tool","weapon_physgun","weapon_fists","brh_ci"},
+    command = "bloodz",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","user","Helpeur","Modérateur-Test","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier FULL",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Un Bloodz est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_CHEFCRIPZ = DarkRP.createJob("-VIP- Chef Cripz", {
+    color = Color(0, 47, 255, 255),
+    model = {
+        "models/player/cripz/slow_1.mdl",
+        "models/player/cripz/slow_2.mdl",
+        "models/player/cripz/slow_3.mdl"
+    },
+    description = [[Vous est chef cripz, vous gerer les cripz]],
+    weapons = {"keys","weapon_physcannon","idcard","gmod_camera","gmod_tool","weapon_physgun","weapon_fists","m9k_remington1858","brh_ci"},
+    command = "chefcripz",
+    max = 1,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier VIP",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Le Chef Cripz est mort")
+    end
+})
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_CRIPZ = DarkRP.createJob("Cripz", {
+    color = Color(0, 47, 255, 255),
+    model = {
+        "models/player/cripz/slow_1.mdl",
+        "models/player/cripz/slow_2.mdl",
+        "models/player/cripz/slow_3.mdl"
+    },
+    description = [[Vous etes Cripz, vous faites partit d'un gang]],
+    weapons = {"keys","weapon_arc_atmcard","idcard","weapon_physcannon","gmod_camera","gmod_tool","weapon_physgun","weapon_fists","brh_ci"},
+    command = "cripz",
+    max = 10,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"VIP","user","Helpeur","Modérateur-Test","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end,
+	CustomCheckFailMsg = "Métier FULL",
+    PlayerDeath = function(ply, weapon, killer)
+        ply:teamBan()
+        ply:changeTeam(GAMEMODE.DefaultTeam, true)
+        DarkRP.notifyAll(0, 4, "Un Cripz est mort")
+    end
+})
+
+
+
+
+--[[
+    Generated using: DarkRP | Job Generator
+    https://csite.io/tools/gmod-darkrp-job
+--]]
+TEAM_STAFF = DarkRP.createJob("Staff | En Service", {
+    color = Color(255, 149, 0, 255),
+    model = {"models/player/nogitsu/armorspider/armorspider_pm.mdl"},
+    description = [[Vous etes Staff de AnonymasRP]],
+    weapons = {},
+    command = "staff",
+    max = 80,
+    salary = 30,
+    admin = 0,
+    vote = false,
+    hasLicense = false,
+    candemote = false,
+    PlayerSpawn = function(ply)
+        ply:SetMaxHealth(100)
+        ply:SetHealth(100)
+        ply:SetArmor(0) end,
+		customCheck = function(ply) return CLIENT or
+    table.HasValue({"Helpeur","Modérateur-Test","Modérateur","admin","Chef-Staff","superadmin"}, ply:GetNWString("usergroup"))
+    end
+})
+
+
+
+--[[---------------------------------------------------------------------------
+Define which team joining players spawn into and what team you change to if demoted
+---------------------------------------------------------------------------]]
+GAMEMODE.DefaultTeam = TEAM_CITIZEN
+--[[---------------------------------------------------------------------------
+Define which teams belong to civil protection
+Civil protection can set warrants, make people wanted and do some other police related things
+---------------------------------------------------------------------------]]
+GAMEMODE.CivilProtection = {
+    [TEAM_POLICE] = true,
+    [TEAM_CHIEF] = true,
+    [TEAM_MAYOR] = true,
+    [TEAM_COMMISSAIRE] = true,
+	[TEAM_AGENTSECRET] = true,
+	[TEAM_CHEFRAID] = true,
+	[TEAM_SNIPER] = true,
+    [TEAM_RAID] = true,
+    [TEAM_MAIRE] = true,
+}
+--[[---------------------------------------------------------------------------
+Jobs that are hitmen (enables the hitman menu)
+---------------------------------------------------------------------------]]
+DarkRP.addHitmanTeam(TEAM_TUEURGAGE)
